@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun ProductCounter(
     name: String,
-    priceText: String,   // Ahora viene como String correctamente
+    priceText: String,   
     count: Int,
     onCountChange: (Int) -> Unit,
     onNameChange: (String) -> Unit,
@@ -46,7 +46,6 @@ fun ProductCounter(
             OutlinedTextField(
                 value = priceText,
                 onValueChange = { newValue ->
-                    // Filtramos solo los dígitos
                     onPriceChange(newValue.filter { it.isDigit() })
                 },
                 label = { Text("Precio Unitario") },
