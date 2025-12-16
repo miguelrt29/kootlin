@@ -21,7 +21,7 @@ import com.example.myapplication.model.Product
 fun ProductItem(
     product: Product,
     onAddClick: () -> Unit,
-    onRemoveClick: () -> Unit   // <-- AGREGADO, pero SIN romper nada
+    onRemoveClick: () -> Unit   
 ) {
 
     Card(
