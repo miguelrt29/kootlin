@@ -17,7 +17,6 @@ fun MyShoppingScreen() {
     var priceText by remember { mutableStateOf("") }
     var count by remember { mutableStateOf(0) }
 
-    // presupuesto fijo (puedes hacerlo dinámico luego)
     val budget = 50000
 
     // Total con seguridad numérica
